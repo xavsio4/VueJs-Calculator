@@ -1,0 +1,42 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+<body>
+
+<div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		<span class="clear" v-on:click="kpress">C</span>
+		<input class="screen" v-model="current" />
+	</div>
+	
+	<div class="keys">
+		<!-- operators and other keys -->
+		<span v-on:click="kpress">7</span>
+		<span v-on:click="kpress">8</span>
+		<span v-on:click="kpress">9</span>
+		<span class="operator" v-on:click="kpress">+</span>
+		<span v-on:click="kpress">4</span>
+		<span v-on:click="kpress">5</span>
+		<span v-on:click="kpress">6</span>
+		<span class="operator" v-on:click="kpress">-</span>
+		<span v-on:click="kpress">1</span>
+		<span v-on:click="kpress">2</span>
+		<span v-on:click="kpress">3</span>
+		<span class="operator" v-on:click="kpress">/</span>
+		<span v-on:click="kpress">0</span>
+		<span v-on:click="kpress">.</span>
+		<span class="eval" v-on:click="kpress">=</span>
+		<span class="operator" v-on:click="kpress">*</span>
+	</div>
+</div>
+
+<!-- JS -->
+  <script src="https://unpkg.com/vue"></script>
+  <script src="js/calculator_vjs.js"></script>
+
+</body>
+</html>
